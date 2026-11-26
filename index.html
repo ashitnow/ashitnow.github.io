@@ -1,0 +1,1452 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>综合产品_免费产品综免费综合_综合产品平台官方视频门户</title>
+<meta name="description" content="综合产品官方网站，深耕综合产品垂直领域的原创高清视频内容平台，汇聚免费产品综免费综合的行业观察、深度测评与创作者社区，为用户提供值得信赖的综合产品精品内容。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f6f5c'/%3E%3Cpath d='M24 18 L48 32 L24 46 Z' fill='%23f4e3b2'/%3E%3C/svg%3E">
+<style>
+:root{
+  --cp-ink:#12211c;
+  --cp-ink-soft:#3d554c;
+  --cp-paper:#f6f8f4;
+  --cp-paper-2:#eef3ec;
+  --cp-line:#d5e0d8;
+  --cp-green:#1f6f5c;
+  --cp-green-deep:#134a3d;
+  --cp-amber:#e6a93c;
+  --cp-clay:#b9643f;
+  --cp-mark:#f4e3b2;
+  --cp-blue:#2f5d7c;
+  --cp-radius:14px;
+  --cp-shadow:0 10px 30px rgba(19,74,61,.10);
+  --cp-head-h:112px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  color:var(--cp-ink);
+  background:var(--cp-paper);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+h1,h2,h3,h4{margin:0;line-height:1.35;letter-spacing:.01em}
+p{margin:0 0 .9em}
+.cp-wrap{width:min(1180px,92%);margin:0 auto}
+.cp-skip{position:absolute;left:-9999px;top:0;background:var(--cp-green);color:#fff;padding:10px 18px;z-index:200}
+.cp-skip:focus{left:12px;top:12px}
+
+/* ===== 吸顶公告 + 页头 ===== */
+.cp-sticky-shell{position:sticky;top:0;z-index:100;box-shadow:0 2px 14px rgba(19,74,61,.08)}
+.cp-announce{
+  background:linear-gradient(90deg,var(--cp-green-deep),var(--cp-green) 55%,#2c8a72);
+  color:#eaf5ef;font-size:.84rem;
+}
+.cp-announce-in{display:flex;align-items:center;gap:14px;padding:8px 0;overflow:hidden}
+.cp-announce-tag{
+  flex:0 0 auto;background:var(--cp-mark);color:var(--cp-green-deep);
+  font-weight:700;padding:2px 10px;border-radius:999px;font-size:.76rem;letter-spacing:.06em;
+}
+.cp-announce-track{position:relative;flex:1 1 auto;min-width:0;height:1.6em;overflow:hidden}
+.cp-announce-item{
+  position:absolute;inset:0;display:flex;align-items:center;gap:10px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  opacity:0;transform:translateY(100%);transition:opacity .45s ease,transform .45s ease;
+}
+.cp-announce-item.cp-is-on{opacity:1;transform:translateY(0)}
+.cp-announce-item b{color:#ffe9b3;font-weight:600}
+.cp-announce-more{flex:0 0 auto;font-size:.76rem;border:1px solid rgba(255,255,255,.45);padding:2px 10px;border-radius:999px;color:#eaf5ef}
+.cp-head{background:rgba(246,248,244,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--cp-line)}
+.cp-head-in{display:flex;align-items:center;gap:20px;padding:12px 0}
+.cp-brand{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+.cp-brand-mark{
+  width:42px;height:42px;border-radius:12px;background:var(--cp-green);
+  display:grid;place-items:center;color:var(--cp-mark);
+  font-weight:800;font-size:1.15rem;letter-spacing:.02em;box-shadow:var(--cp-shadow);
+}
+.cp-brand-txt strong{display:block;font-size:1.06rem;letter-spacing:.04em}
+.cp-brand-txt span{display:block;font-size:.7rem;color:var(--cp-ink-soft);letter-spacing:.16em;text-transform:uppercase}
+.cp-nav{display:flex;align-items:center;gap:4px;flex:1 1 auto;flex-wrap:wrap}
+.cp-nav a{
+  padding:7px 12px;border-radius:9px;font-size:.9rem;color:var(--cp-ink-soft);
+  transition:background .2s,color .2s;white-space:nowrap;
+}
+.cp-nav a:hover,.cp-nav a.cp-is-active{background:var(--cp-paper-2);color:var(--cp-green-deep);font-weight:600}
+.cp-head-tools{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.cp-search{position:relative;display:flex;align-items:center}
+.cp-search input{
+  width:190px;padding:8px 34px 8px 13px;border-radius:999px;border:1px solid var(--cp-line);
+  background:#fff;font-size:.86rem;color:var(--cp-ink);outline:none;transition:border-color .2s,width .25s;
+}
+.cp-search input:focus{border-color:var(--cp-green);width:230px}
+.cp-search button{
+  position:absolute;right:4px;top:50%;transform:translateY(-50%);
+  width:26px;height:26px;border:0;border-radius:50%;background:var(--cp-green);color:#fff;
+  cursor:pointer;font-size:.8rem;line-height:1;display:grid;place-items:center;
+}
+.cp-search-tip{
+  position:absolute;top:calc(100% + 8px);left:0;right:0;background:#fff;border:1px solid var(--cp-line);
+  border-radius:10px;box-shadow:var(--cp-shadow);padding:6px;font-size:.82rem;display:none;z-index:40;
+}
+.cp-search-tip.cp-is-open{display:block}
+.cp-search-tip span{display:block;padding:5px 8px;border-radius:6px;color:var(--cp-ink-soft);cursor:pointer}
+.cp-search-tip span:hover{background:var(--cp-paper-2);color:var(--cp-green-deep)}
+.cp-burger{
+  display:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--cp-line);
+  background:#fff;cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:4px;
+}
+.cp-burger i{display:block;width:17px;height:2px;background:var(--cp-ink);border-radius:2px}
+.cp-mobile-nav{display:none;border-top:1px solid var(--cp-line);background:#fff;padding:10px 0 16px}
+.cp-mobile-nav.cp-is-open{display:block}
+.cp-mobile-nav a{display:block;padding:10px 4%;border-bottom:1px dashed var(--cp-line);font-size:.94rem;color:var(--cp-ink-soft)}
+
+/* ===== 通用区块 ===== */
+.cp-section{padding:64px 0;scroll-margin-top:calc(var(--cp-head-h) + 16px)}
+.cp-section.cp-alt{background:var(--cp-paper-2)}
+.cp-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:28px;flex-wrap:wrap}
+.cp-sec-head h2{font-size:clamp(1.4rem,2.6vw,2rem);position:relative;padding-left:16px}
+.cp-sec-head h2::before{
+  content:"";position:absolute;left:0;top:.18em;bottom:.18em;width:6px;border-radius:4px;
+  background:linear-gradient(var(--cp-green),var(--cp-amber));
+}
+.cp-sec-desc{color:var(--cp-ink-soft);font-size:.92rem;max-width:600px}
+.cp-eyebrow{
+  display:inline-block;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--cp-green);font-weight:700;margin-bottom:8px;
+}
+.cp-btn{
+  display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:999px;
+  border:1px solid var(--cp-green);background:var(--cp-green);color:#fff;font-size:.9rem;font-weight:600;
+  cursor:pointer;transition:transform .18s,box-shadow .18s,background .18s;
+}
+.cp-btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(31,111,92,.28)}
+.cp-btn.cp-ghost{background:transparent;color:var(--cp-green-deep);border-color:var(--cp-green)}
+.cp-btn.cp-ghost:hover{background:var(--cp-green);color:#fff}
+.cp-btn.cp-small{padding:6px 14px;font-size:.8rem}
+
+/* ===== 首屏 5:5 ===== */
+.cp-hero{padding:56px 0 48px;background:
+  radial-gradient(900px 420px at 88% -10%,rgba(230,169,60,.16),transparent 60%),
+  radial-gradient(700px 380px at 4% 110%,rgba(31,111,92,.12),transparent 65%),
+  var(--cp-paper);
+}
+.cp-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:44px;align-items:center}
+.cp-hero-badge{
+  display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--cp-line);
+  padding:5px 14px;border-radius:999px;font-size:.76rem;color:var(--cp-green-deep);font-weight:600;
+  letter-spacing:.06em;margin-bottom:18px;
+}
+.cp-hero-badge em{width:7px;height:7px;border-radius:50%;background:var(--cp-amber);display:inline-block}
+.cp-hero h1{font-size:clamp(1.9rem,4vw,3rem);letter-spacing:.01em;margin-bottom:16px}
+.cp-hero h1 mark{background:linear-gradient(transparent 62%,var(--cp-mark) 62%);color:inherit;padding:0 2px}
+.cp-hero-lead{font-size:1rem;color:var(--cp-ink-soft);max-width:46ch}
+.cp-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.cp-hero-media{position:relative}
+.cp-hero-media svg{width:100%;height:auto;border-radius:20px;box-shadow:0 22px 48px rgba(19,74,61,.20)}
+.cp-hero-chip{
+  position:absolute;left:-14px;bottom:22px;background:#fff;border-radius:14px;padding:10px 16px;
+  box-shadow:var(--cp-shadow);font-size:.8rem;display:flex;align-items:center;gap:10px;
+}
+.cp-hero-chip strong{color:var(--cp-green);font-size:1.05rem}
+.cp-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:34px;max-width:560px}
+.cp-stat{background:#fff;border:1px solid var(--cp-line);border-radius:var(--cp-radius);padding:14px 16px}
+.cp-stat b{display:block;font-size:1.3rem;color:var(--cp-green-deep);letter-spacing:.02em}
+.cp-stat span{font-size:.78rem;color:var(--cp-ink-soft)}
+
+/* ===== 企业简介 / 深度解析 ===== */
+.cp-about-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:40px;align-items:start}
+.cp-intro-card{background:#fff;border:1px solid var(--cp-line);border-radius:18px;padding:26px 28px;box-shadow:var(--cp-shadow)}
+.cp-intro-card h3{font-size:1.06rem;margin-bottom:10px;color:var(--cp-green-deep)}
+.cp-intro-card p{font-size:.95rem;color:var(--cp-ink-soft)}
+.cp-facts{display:grid;gap:12px}
+.cp-fact{display:flex;gap:14px;background:var(--cp-paper-2);border-radius:12px;padding:14px 16px}
+.cp-fact b{flex:0 0 auto;width:64px;font-size:.8rem;color:var(--cp-green);letter-spacing:.06em}
+.cp-fact span{font-size:.88rem;color:var(--cp-ink-soft)}
+.cp-deep{margin-top:36px;columns:2;column-gap:38px}
+.cp-deep h3{break-after:avoid;font-size:1.02rem;color:var(--cp-green-deep);margin:0 0 .5em;padding-left:12px;border-left:3px solid var(--cp-amber)}
+.cp-deep p{font-size:.94rem;color:var(--cp-ink-soft);margin-bottom:1.1em}
+.cp-deep-tag{display:inline-block;background:var(--cp-mark);color:var(--cp-green-deep);border-radius:6px;padding:0 6px;font-weight:700;font-size:.86em}
+
+/* ===== 焦点内容 ===== */
+.cp-focus-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:26px}
+.cp-focus-main{background:#fff;border:1px solid var(--cp-line);border-radius:18px;overflow:hidden;box-shadow:var(--cp-shadow);display:flex;flex-direction:column}
+.cp-focus-main figure{margin:0;position:relative}
+.cp-focus-main figure svg{width:100%;height:auto;aspect-ratio:16/9}
+.cp-focus-play{
+  position:absolute;inset:auto auto 14px 14px;background:rgba(19,74,61,.86);color:#fff;
+  font-size:.78rem;padding:5px 12px;border-radius:999px;display:flex;align-items:center;gap:6px;
+}
+.cp-focus-body{padding:20px 24px 24px}
+.cp-focus-body h3{font-size:1.16rem;margin-bottom:8px}
+.cp-focus-body p{font-size:.92rem;color:var(--cp-ink-soft);margin-bottom:12px}
+.cp-meta{display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-size:.78rem;color:var(--cp-ink-soft)}
+.cp-tag{background:var(--cp-paper-2);border:1px solid var(--cp-line);color:var(--cp-green-deep);border-radius:999px;padding:1px 10px;font-size:.74rem}
+.cp-focus-side{display:grid;gap:14px;align-content:start}
+.cp-mini{background:#fff;border:1px solid var(--cp-line);border-radius:14px;padding:15px 17px;transition:transform .18s,box-shadow .18s}
+.cp-mini:hover{transform:translateY(-3px);box-shadow:var(--cp-shadow)}
+.cp-mini h4{font-size:.98rem;margin-bottom:5px}
+.cp-mini p{font-size:.85rem;color:var(--cp-ink-soft);margin:0}
+
+/* ===== 视频流（三列等高） ===== */
+.cp-video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.cp-vcard{
+  background:#fff;border:1px solid var(--cp-line);border-radius:16px;overflow:hidden;
+  display:flex;flex-direction:column;min-width:0;transition:transform .2s,box-shadow .2s,border-color .2s;
+}
+.cp-vcard:hover{transform:translateY(-4px);box-shadow:var(--cp-shadow);border-color:#b9d2c6}
+.cp-vcard figure{margin:0;position:relative;overflow:hidden}
+.cp-vcard figure svg{width:100%;height:auto;aspect-ratio:16/9}
+.cp-vcard .cp-vnum{
+  position:absolute;top:10px;left:10px;background:rgba(19,74,61,.86);color:#fff;
+  font-size:.72rem;padding:2px 9px;border-radius:999px;letter-spacing:.06em;
+}
+.cp-vbody{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1 1 auto;min-width:0}
+.cp-vbody h3{font-size:1rem;margin-bottom:6px;word-break:break-word}
+.cp-vbody p{font-size:.85rem;color:var(--cp-ink-soft);flex:1 1 auto}
+.cp-vfoot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px;flex-wrap:wrap}
+.cp-vstat{font-size:.76rem;color:var(--cp-ink-soft);display:flex;gap:10px;flex-wrap:wrap}
+.cp-vact{display:flex;gap:6px}
+.cp-icon-btn{
+  border:1px solid var(--cp-line);background:var(--cp-paper);border-radius:999px;
+  padding:3px 10px;font-size:.76rem;color:var(--cp-ink-soft);cursor:pointer;display:inline-flex;
+  align-items:center;gap:4px;transition:background .18s,color .18s,border-color .18s;
+}
+.cp-icon-btn:hover{background:var(--cp-paper-2);color:var(--cp-green-deep)}
+.cp-icon-btn.cp-is-liked{background:#fdeaea;border-color:#f0b9b9;color:#b4453a}
+.cp-icon-btn.cp-is-saved{background:#fff3d8;border-color:#eacb86;color:#8a6416}
+
+/* ===== 专题 ===== */
+.cp-topic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.cp-topic{background:#fff;border:1px solid var(--cp-line);border-radius:16px;padding:0;overflow:hidden;display:flex;flex-direction:column}
+.cp-topic.cp-topic-wide{grid-column:span 2;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr)}
+.cp-topic figure{margin:0}
+.cp-topic figure svg{width:100%;height:100%;min-height:100%;aspect-ratio:16/10;object-fit:cover}
+.cp-topic-body{padding:20px 22px}
+.cp-topic-body h3{font-size:1.06rem;margin-bottom:6px}
+.cp-topic-body p{font-size:.88rem;color:var(--cp-ink-soft)}
+.cp-topic-status{display:inline-flex;align-items:center;gap:6px;font-size:.74rem;color:var(--cp-green);font-weight:600;margin-bottom:8px}
+.cp-topic-status em{width:7px;height:7px;border-radius:50%;background:var(--cp-green);display:inline-block}
+.cp-topic-list{list-style:none;margin:12px 0 0;padding:0;border-top:1px dashed var(--cp-line)}
+.cp-topic-list li{font-size:.86rem;color:var(--cp-ink-soft);padding:8px 0 8px 16px;position:relative;border-bottom:1px dashed var(--cp-line)}
+.cp-topic-list li::before{content:"▸";position:absolute;left:0;color:var(--cp-amber)}
+.cp-topic-list li:last-child{border-bottom:0}
+
+/* ===== 创作者名录 ===== */
+.cp-author-row{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.cp-author{
+  background:#fff;border:1px solid var(--cp-line);border-radius:14px;padding:18px 16px;text-align:center;
+  cursor:pointer;transition:transform .18s,box-shadow .18s;min-width:0;
+}
+.cp-author:hover{transform:translateY(-3px);box-shadow:var(--cp-shadow)}
+.cp-avatar{
+  width:56px;height:56px;border-radius:50%;margin:0 auto 10px;display:grid;place-items:center;
+  color:#fff;font-weight:700;font-size:1.1rem;letter-spacing:.04em;box-shadow:inset 0 -6px 14px rgba(0,0,0,.12);
+}
+.cp-author h3{font-size:.95rem;margin-bottom:2px}
+.cp-author .cp-role{font-size:.75rem;color:var(--cp-green);font-weight:600}
+.cp-author .cp-nums{font-size:.74rem;color:var(--cp-ink-soft);margin-top:6px}
+
+/* ===== 评论区（双列） ===== */
+.cp-review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.cp-review{background:#fff;border:1px solid var(--cp-line);border-radius:14px;padding:16px 18px}
+.cp-review-top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.cp-review-dot{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:.8rem;font-weight:700}
+.cp-review-name{font-size:.86rem;font-weight:600}
+.cp-review-star{color:var(--cp-amber);font-size:.78rem;letter-spacing:.06em}
+.cp-review p{font-size:.86rem;color:var(--cp-ink-soft);margin:0}
+
+/* ===== 榜单 ===== */
+.cp-rank-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.cp-rank{background:#fff;border:1px solid var(--cp-line);border-radius:16px;padding:20px 22px}
+.cp-rank h3{font-size:1rem;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.cp-rank h3 em{font-style:normal;background:var(--cp-green);color:#fff;font-size:.7rem;padding:1px 8px;border-radius:999px}
+.cp-rank ol{list-style:none;counter-reset:r;margin:0;padding:0}
+.cp-rank li{
+  counter-increment:r;display:flex;gap:10px;font-size:.86rem;color:var(--cp-ink-soft);
+  padding:8px 0;border-bottom:1px dashed var(--cp-line);align-items:baseline;
+}
+.cp-rank li::before{content:counter(r);flex:0 0 20px;color:var(--cp-amber);font-weight:700}
+.cp-rank li:last-child{border-bottom:0}
+
+/* ===== 动态 + 合作 + FAQ ===== */
+.cp-triple{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:34px;align-items:start}
+.cp-timeline{list-style:none;margin:0;padding:0 0 0 20px;border-left:2px solid var(--cp-line)}
+.cp-timeline li{position:relative;padding:0 0 20px 18px}
+.cp-timeline li:last-child{padding-bottom:0}
+.cp-timeline li::before{
+  content:"";position:absolute;left:-27px;top:6px;width:11px;height:11px;border-radius:50%;
+  background:#fff;border:2px solid var(--cp-green);
+}
+.cp-timeline time{display:block;font-size:.74rem;color:var(--cp-green);letter-spacing:.08em;font-weight:600}
+.cp-timeline h4{font-size:.95rem;margin:2px 0 3px}
+.cp-timeline p{font-size:.84rem;color:var(--cp-ink-soft);margin:0}
+.cp-partner-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.cp-partner{
+  background:#fff;border:1px solid var(--cp-line);border-radius:12px;padding:14px;
+  font-size:.86rem;display:flex;align-items:center;gap:10px;color:var(--cp-ink-soft);
+}
+.cp-partner i{
+  width:30px;height:30px;border-radius:8px;display:grid;place-items:center;color:#fff;
+  font-size:.72rem;font-style:normal;font-weight:700;flex:0 0 auto;
+}
+.cp-faq{display:grid;gap:10px;margin-top:30px}
+.cp-faq details{background:#fff;border:1px solid var(--cp-line);border-radius:12px;padding:0 18px}
+.cp-faq summary{
+  cursor:pointer;list-style:none;padding:14px 0;font-weight:600;font-size:.94rem;display:flex;
+  justify-content:space-between;gap:12px;align-items:center;
+}
+.cp-faq summary::-webkit-details-marker{display:none}
+.cp-faq summary::after{content:"+";color:var(--cp-green);font-size:1.1rem;font-weight:700}
+.cp-faq details[open] summary::after{content:"–"}
+.cp-faq p{font-size:.87rem;color:var(--cp-ink-soft);padding-bottom:14px;margin:0}
+
+/* ===== 投稿 CTA ===== */
+.cp-cta{
+  background:linear-gradient(120deg,var(--cp-green-deep),var(--cp-green) 55%,#2f8d74);
+  border-radius:22px;padding:38px 40px;color:#eaf5ef;display:flex;align-items:center;
+  justify-content:space-between;gap:26px;flex-wrap:wrap;box-shadow:var(--cp-shadow);
+}
+.cp-cta h2{font-size:1.5rem;margin-bottom:6px;padding:0}
+.cp-cta h2::before{display:none}
+.cp-cta p{font-size:.9rem;color:#cfe6dc;margin:0;max-width:52ch}
+.cp-cta .cp-btn{background:var(--cp-mark);border-color:var(--cp-mark);color:var(--cp-green-deep)}
+.cp-cta .cp-btn:hover{background:#ffe9b3}
+
+/* ===== 页脚 ===== */
+.cp-footer{background:var(--cp-ink);color:#c9d7d1;padding:52px 0 26px;margin-top:8px}
+.cp-footer-grid{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:30px}
+.cp-footer h4{font-size:.9rem;color:#fff;margin-bottom:12px;letter-spacing:.06em}
+.cp-footer p{font-size:.83rem;color:#9fb3ac;line-height:1.8}
+.cp-footer ul{list-style:none;margin:0;padding:0}
+.cp-footer li{font-size:.83rem;padding:4px 0;color:#9fb3ac}
+.cp-footer li a:hover{color:var(--cp-mark)}
+.cp-footer-brand{display:flex;align-items:center;gap:11px;margin-bottom:12px}
+.cp-footer-brand .cp-brand-mark{background:var(--cp-green);box-shadow:none}
+.cp-footer-brand strong{color:#fff;font-size:1rem}
+.cp-footer-bottom{
+  border-top:1px solid #2c3f38;margin-top:30px;padding-top:18px;display:flex;
+  justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.78rem;color:#8ba39b;
+}
+
+/* ===== 弹窗 & toast ===== */
+.cp-modal{
+  position:fixed;inset:0;background:rgba(18,33,28,.55);z-index:300;display:none;
+  align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(3px);
+}
+.cp-modal.cp-is-open{display:flex}
+.cp-modal-box{background:#fff;border-radius:18px;padding:26px 28px;width:min(520px,100%);position:relative;box-shadow:0 24px 60px rgba(0,0,0,.3)}
+.cp-modal-box h3{font-size:1.08rem;margin-bottom:10px;color:var(--cp-green-deep)}
+.cp-modal-box p{font-size:.9rem;color:var(--cp-ink-soft)}
+.cp-modal-close{
+  position:absolute;right:14px;top:12px;border:0;background:var(--cp-paper-2);width:30px;height:30px;
+  border-radius:50%;cursor:pointer;font-size:.95rem;color:var(--cp-ink-soft);
+}
+.cp-modal-field{margin:12px 0}
+.cp-modal-field label{display:block;font-size:.82rem;font-weight:600;margin-bottom:5px}
+.cp-modal-field input,.cp-modal-field textarea{
+  width:100%;border:1px solid var(--cp-line);border-radius:10px;padding:9px 12px;font-size:.88rem;
+  font-family:inherit;outline:none;
+}
+.cp-modal-field input:focus,.cp-modal-field textarea:focus{border-color:var(--cp-green)}
+.cp-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);background:var(--cp-green-deep);
+  color:#fff;padding:10px 22px;border-radius:999px;font-size:.86rem;z-index:400;opacity:0;
+  pointer-events:none;transition:opacity .25s,transform .25s;box-shadow:0 10px 26px rgba(0,0,0,.25);
+}
+.cp-toast.cp-is-show{opacity:1;transform:translate(-50%,0)}
+.cp-top{
+  position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;border:0;
+  background:var(--cp-green);color:#fff;font-size:1rem;cursor:pointer;z-index:150;
+  opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;box-shadow:var(--cp-shadow);
+}
+.cp-top.cp-is-show{opacity:1;pointer-events:auto;transform:translateY(-2px)}
+
+/* ===== 响应式 ===== */
+@media (max-width:1024px){
+  .cp-hero-grid{grid-template-columns:1fr;gap:28px}
+  .cp-author-row{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .cp-video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cp-focus-grid{grid-template-columns:1fr}
+  .cp-deep{columns:1}
+  .cp-about-grid{grid-template-columns:1fr}
+  .cp-triple{grid-template-columns:1fr}
+  .cp-footer-grid{grid-template-columns:1fr 1fr}
+  .cp-topic.cp-topic-wide{grid-template-columns:1fr}
+  .cp-rank-grid{grid-template-columns:1fr}
+}
+@media (max-width:860px){
+  :root{--cp-head-h:150px}
+  .cp-nav{display:none}
+  .cp-burger{display:flex}
+  .cp-search input{width:150px}
+  .cp-search input:focus{width:170px}
+  .cp-head-in{flex-wrap:wrap}
+  .cp-head-tools{order:3}
+}
+@media (max-width:640px){
+  .cp-stats{grid-template-columns:1fr;}
+  .cp-video-grid,.cp-author-row,.cp-review-grid,.cp-topic-grid,.cp-partner-grid,.cp-footer-grid{grid-template-columns:1fr}
+  .cp-section{padding:46px 0}
+  .cp-cta{padding:28px 22px}
+  .cp-hero-chip{left:8px;bottom:12px;font-size:.74rem}
+  .cp-announce-in{gap:8px}
+  .cp-announce-more{display:none}
+  .cp-topic.cp-topic-wide{grid-column:span 1}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+<a class="cp-skip" href="#cp-main">跳到主要内容</a>
+
+<div class="cp-sticky-shell" id="cp-top-anchor">
+  <!-- S1 公告条 -->
+  <div class="cp-announce" role="region" aria-label="官方公告">
+    <div class="cp-wrap cp-announce-in">
+      <span class="cp-announce-tag">官方发布</span>
+      <div class="cp-announce-track" id="cp-announce-track">
+        <div class="cp-announce-item cp-is-on"><b>11-22</b>「免费产品综免费综合」年度评测专题上线，收录 42 支高清原创视频</div>
+        <div class="cp-announce-item"><b>11-20</b>综合产品创作者扶持计划第 6 期报名开启，名额 120 位</div>
+        <div class="cp-announce-item"><b>11-18</b>移动端播放器升级：支持 4K 高清下载与离线收藏同步</div>
+        <div class="cp-announce-item"><b>11-15</b>「综合产品使用攻略」征集投票结果公布，12 支作品进入复赛</div>
+      </div>
+      <a class="cp-announce-more" href="#cp-news">查看更多动态 ›</a>
+    </div>
+  </div>
+
+  <!-- 页头 -->
+  <header class="cp-head">
+    <div class="cp-wrap cp-head-in">
+      <a class="cp-brand" href="#cp-top-anchor" aria-label="综合产品官方网站首页">
+        <span class="cp-brand-mark" aria-hidden="true">综</span>
+        <span class="cp-brand-txt">
+          <strong>综合产品</strong>
+          <span>ZONGHE PRODUCTS</span>
+        </span>
+      </a>
+      <nav class="cp-nav" aria-label="主导航">
+        <a href="#cp-about" class="cp-is-active">品牌介绍</a>
+        <a href="#cp-focus">焦点内容</a>
+        <a href="#cp-videos">视频频道</a>
+        <a href="#cp-topics">专题企划</a>
+        <a href="#cp-authors">创作者</a>
+        <a href="#cp-reviews">用户口碑</a>
+        <a href="#cp-news">企业动态</a>
+        <a href="#cp-faq">帮助中心</a>
+      </nav>
+      <div class="cp-head-tools">
+        <div class="cp-search">
+          <input type="search" id="cp-search-input" placeholder="搜索产品、专题或创作者" aria-label="站内搜索" autocomplete="off">
+          <button type="button" id="cp-search-btn" aria-label="执行搜索">搜</button>
+          <div class="cp-search-tip" id="cp-search-tip" role="listbox" aria-label="搜索建议"></div>
+        </div>
+        <button class="cp-burger" id="cp-burger" aria-label="展开移动端导航" aria-expanded="false" aria-controls="cp-mobile-nav">
+          <i></i><i></i><i></i>
+        </button>
+      </div>
+    </div>
+    <nav class="cp-mobile-nav" id="cp-mobile-nav" aria-label="移动端导航">
+      <a href="#cp-about">品牌介绍</a>
+      <a href="#cp-focus">焦点内容</a>
+      <a href="#cp-videos">视频频道</a>
+      <a href="#cp-topics">专题企划</a>
+      <a href="#cp-authors">创作者</a>
+      <a href="#cp-reviews">用户口碑</a>
+      <a href="#cp-news">企业动态</a>
+      <a href="#cp-faq">帮助中心</a>
+    </nav>
+  </header>
+</div>
+
+<main id="cp-main">
+
+  <!-- S2 品牌首屏 -->
+  <section class="cp-hero" aria-labelledby="cp-h1">
+    <div class="cp-wrap cp-hero-grid">
+      <div>
+        <span class="cp-hero-badge"><em></em>综合产品官方网站 · 企业级视频内容门户</span>
+        <h1 id="cp-h1">综合产品：<mark>免费产品综免费综合</mark>的原创高清视频社区</h1>
+        <p class="cp-hero-lead">作为深耕综合产品垂直领域的品牌平台，我们把评测、攻略、访谈与生活记录拍成可以反复观看的影像，让每一次挑选与使用都有据可依。</p>
+        <div class="cp-hero-actions">
+          <a class="cp-btn" href="#cp-videos">进入视频频道</a>
+          <a class="cp-btn cp-ghost" href="#cp-authors">认识创作者</a>
+          <button class="cp-btn cp-ghost" type="button" data-cp-open="submit">我要投稿</button>
+        </div>
+        <div class="cp-stats" aria-label="平台核心数据">
+          <div class="cp-stat"><b>1,860+</b><span>原创视频累计上线</span></div>
+          <div class="cp-stat"><b>42.7 万</b><span>注册创作者与用户</span></div>
+          <div class="cp-stat"><b>96.4%</b><span>内容口碑好评率</span></div>
+        </div>
+      </div>
+      <div class="cp-hero-media">
+        <svg viewBox="0 0 720 520" role="img" aria-label="综合产品官网主视觉：阶梯式产品陈列台与播放按钮构成的内容矩阵">
+          <defs>
+            <linearGradient id="cpHeroBg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#134a3d"/><stop offset="1" stop-color="#2f8d74"/>
+            </linearGradient>
+            <linearGradient id="cpHeroCard" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#ffffff" stop-opacity=".96"/><stop offset="1" stop-color="#e6f0ea" stop-opacity=".9"/>
+            </linearGradient>
+          </defs>
+          <rect width="720" height="520" rx="24" fill="url(#cpHeroBg)"/>
+          <circle cx="620" cy="80" r="120" fill="#e6a93c" opacity=".18"/>
+          <circle cx="110" cy="470" r="150" fill="#f4e3b2" opacity=".10"/>
+          <g opacity=".28" stroke="#eaf5ef" stroke-width="1.2">
+            <path d="M0 130 H720 M0 260 H720 M0 390 H720"/>
+          </g>
+          <rect x="86" y="150" width="230" height="150" rx="14" fill="url(#cpHeroCard)"/>
+          <rect x="112" y="176" width="120" height="12" rx="6" fill="#1f6f5c" opacity=".8"/>
+          <rect x="112" y="198" width="176" height="8" rx="4" fill="#3d554c" opacity=".35"/>
+          <rect x="112" y="214" width="150" height="8" rx="4" fill="#3d554c" opacity=".28"/>
+          <rect x="112" y="248" width="72" height="26" rx="13" fill="#e6a93c"/>
+          <rect x="342" y="110" width="290" height="330" rx="18" fill="#ffffff" opacity=".94"/>
+          <rect x="368" y="136" width="238" height="128" rx="12" fill="#1f6f5c" opacity=".16"/>
+          <circle cx="487" cy="200" r="30" fill="#1f6f5c"/>
+          <path d="M478 185 L505 200 L478 215 Z" fill="#f4e3b2"/>
+          <rect x="368" y="286" width="180" height="11" rx="5" fill="#134a3d" opacity=".7"/>
+          <rect x="368" y="308" width="228" height="8" rx="4" fill="#3d554c" opacity=".32"/>
+          <rect x="368" y="326" width="200" height="8" rx="4" fill="#3d554c" opacity=".26"/>
+          <rect x="368" y="352" width="86" height="22" rx="11" fill="#f4e3b2"/>
+          <rect x="466" y="352" width="86" height="22" rx="11" fill="#e6a93c" opacity=".75"/>
+          <rect x="86" y="330" width="230" height="22" rx="8" fill="#f4e3b2" opacity=".9"/>
+          <rect x="86" y="364" width="176" height="10" rx="5" fill="#eaf5ef" opacity=".5"/>
+        </svg>
+        <div class="cp-hero-chip"><span>本月新增高清原创</span><strong>138</strong><span>支</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S2/S15 品牌介绍 + 关键词深度解析 -->
+  <section class="cp-section" id="cp-about" aria-labelledby="cp-about-h2">
+    <div class="cp-wrap">
+      <div class="cp-sec-head">
+        <div>
+          <span class="cp-eyebrow">About the brand</span>
+          <h2 id="cp-about-h2">关于综合产品：一个把<strong>免费产品综免费综合</strong>讲清楚的官方平台</h2>
+        </div>
+        <p class="cp-sec-desc">我们相信真实的使用经验比任何参数表都更有说服力，所以坚持用视频记录过程、还原细节、公开结论。</p>
+      </div>
+
+      <div class="cp-about-grid">
+        <div class="cp-intro-card">
+          <h3>企业简介</h3>
+          <p>综合产品是一个面向大众消费者的视频内容品牌，官方网站集内容发布、创作者协作、专题企划与用户互动于一体。平台自创立以来持续聚焦综合产品领域，围绕选购决策、使用体验与长期维护三个真实场景生产原创内容，累计上线高清视频一千八百余支，覆盖家居、数码、厨房、出行与个人护理等多个品类。我们与超过四十位长期签约创作者保持合作，建立选题共研、拍摄共制、上线共评的协作机制，并为每一位用户保留真实的评价入口。作为持续运营的企业内容平台，我们坚持以用户至上为准绳，把品质、口碑与可信赖作为长期目标，努力让「免费产品综免费综合」这件事被更多人正确理解与高效使用。</p>
+        </div>
+        <div class="cp-facts">
+          <div class="cp-fact"><b>成立时间</b><span>2018 年，团队从三人小组成长为内容与技术双线运营的成熟企业。</span></div>
+          <div class="cp-fact"><b>内容方向</b><span>选购评测、使用攻略、创作者访谈、行业观察与生活方式记录。</span></div>
+          <div class="cp-fact"><b>质量机制</b><span>三审三校与实拍留档制度，所有推荐结论可回溯到拍摄素材。</span></div>
+          <div class="cp-fact"><b>社区原则</b><span>真实表达、多元包容，允许反对意见，反对无依据的极端结论。</span></div>
+        </div>
+      </div>
+
+      <div class="cp-deep">
+        <h3>重新理解「综合产品」：它不是一个词，而是一套判断方法</h3>
+        <p>很多用户在第一次接触<span class="cp-deep-tag">综合产品</span>这个概念时会本能地把它等同于“什么都有、什么都不精”。这其实是长期以来的误解。综合产品真正的价值，在于它要求使用者在多个维度之间做权衡：预算、使用频次、维护成本、空间占用与家庭成员的共同需求。官方网站过去三年做的测评节目里，有一半以上的选题都在处理这种权衡。例如我们做过一期关于厨房小电器的横评，把同一价位段的八款产品放在同一间厨房里连续使用三十天，记录每天的清洁耗时与故障情况，结论并不是“谁最强”，而是“在什么家庭结构下谁更合适”。这种表达方式不够刺激，却能帮用户少走弯路。</p>
+        <h3>从免费产品到长期使用：我们把测评拆成三个阶段</h3>
+        <p>第一阶段是选购前的信息核对。在这部分内容里，创作者会用清单式的方法逐项对比参数，但不会只念参数，而是把参数翻译成使用场景：两个人用的容量是多少，租房能不能放下，噪音在夜间是否明显。第二阶段是使用中的问题记录，这也是平台上播放完成度最高的一类内容。我们鼓励创作者拍下那些不完美的时刻，例如某款产品在第五天出现的异响，或者收纳结构的真实磨损。第三阶段是长期维护与二次决策，包括清洁、保养、配件更换与转售建议。把这三个阶段串起来，才构成一次完整的综合产品决策过程，也才让「综免费综合」真正落到可执行的层面，而不是停留在口头的“性价比”。</p>
+        <h3>内容生态如何运转：创作者、编辑与用户的三方协作</h3>
+        <p>综合产品的内容生态并不是“创作者拍什么就发什么”。平台设有选题会机制，编辑团队会依据搜索热词、用户提问与行业新品节奏整理选题池，创作者认领后进行两次试拍评估，确认可行才进入正式制作。上线之后，用户评价区的每一条具体反馈都会被汇总进复盘文档，成为下一季选题的输入。为了让更多新人有机会被看见，我们设立了免费向创作者开放的公共器材间与样板场景，报名审核通过即可使用。这套机制让平台保持了稳定产出，也让不同背景的创作者可以在同一个标准下被公平比较。行业领先不是一句口号，而是由一次次具体的、可被检验的流程堆起来的。</p>
+        <h3>关于「免费」与「付费」：我们坚持把边界说清楚</h3>
+        <p>平台上的免费内容指的是无需付费即可观看的公开视频与攻略，但免费并不等于低质。相反，官方把最核心的选购方法论、最耗时的大型横评都放在免费区，因为这部分内容最具公共价值。付费服务则集中在个性化咨询与深度陪跑，例如针对具体户型的空间规划建议、批量采购的清单定制等。所有付费服务与免费内容之间不存在信息差诱导，付费项目也不会影响免费区的结论倾向。我们相信透明的边界是长期信任的基础，这也是综合产品能够被用户称为“值得信赖”的原因之一。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 焦点内容 -->
+  <section class="cp-section cp-alt" id="cp-focus" aria-labelledby="cp-focus-h2">
+    <div class="cp-wrap">
+      <div class="cp-sec-head">
+        <div>
+          <span class="cp-eyebrow">Focus</span>
+          <h2 id="cp-focus-h2">焦点推荐：综合产品本周值得花时间看的三支片</h2>
+        </div>
+        <p class="cp-sec-desc">由编辑团队从上百支新片中筛出，兼顾信息密度与观看体验，全部为官方高清正版内容。</p>
+      </div>
+
+      <div class="cp-focus-grid">
+        <article class="cp-focus-main">
+          <figure>
+            <svg viewBox="0 0 800 450" role="img" aria-label="综合产品年度横评现场拍摄画面：长桌上排列待测产品与记录表格">
+              <defs>
+                <linearGradient id="cpFocusA" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#274c5e"/><stop offset="1" stop-color="#4f7f92"/>
+                </linearGradient>
+              </defs>
+              <rect width="800" height="450" fill="url(#cpFocusA)"/>
+              <rect x="0" y="308" width="800" height="142" fill="#1d3a48"/>
+              <rect x="70" y="230" width="120" height="90" rx="8" fill="#e6dcc3"/>
+              <rect x="210" y="200" width="120" height="120" rx="8" fill="#c9d8cf"/>
+              <rect x="350" y="244" width="120" height="76" rx="8" fill="#e6a93c"/>
+              <rect x="490" y="214" width="120" height="106" rx="8" fill="#eaf5ef"/>
+              <rect x="630" y="252" width="100" height="68" rx="8" fill="#b9643f"/>
+              <g stroke="#f4e3b2" stroke-width="2" opacity=".7" fill="none">
+                <path d="M110 210 h60 M250 180 h60 M390 224 h60 M530 194 h60 M660 232 h50"/>
+              </g>
+              <circle cx="400" cy="118" r="34" fill="#eaf5ef" opacity=".92"/>
+              <path d="M390 102 L416 118 L390 134 Z" fill="#274c5e"/>
+              <text x="70" y="404" font-size="20" fill="#cfe6dc" font-family="sans-serif">30 天连续使用 · 全流程实拍留档</text>
+            </svg>
+            <span class="cp-focus-play">▶ 高清 24:16</span>
+          </figure>
+          <div class="cp-focus-body">
+            <h3>八款同价位综合产品 30 天横评：拆开清洁成本与故障率</h3>
+            <p>我们把八款热门型号放进同一套生活动线里，记录每天的使用时长、清洁耗时与意外停机次数。片尾给出三档预算下的选择建议，并公开全部原始记录表，方便你按自己的需求重算一遍。</p>
+            <div class="cp-meta">
+              <span class="cp-tag">深度测评</span><span class="cp-tag">年度专题</span>
+              <span>作者：陆启年</span><span>播放 18.6 万</span><span>点赞 9,240</span>
+            </div>
+            <div class="cp-vfoot">
+              <div class="cp-vact">
+                <button class="cp-icon-btn" type="button" data-cp-like>♡ 点赞</button>
+                <button class="cp-icon-btn" type="button" data-cp-save>☆ 收藏</button>
+                <button class="cp-icon-btn" type="button" data-cp-share>⤴ 分享</button>
+              </div>
+              <button class="cp-icon-btn" type="button" data-cp-open="comment">查看 318 条评论</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="cp-focus-side">
+          <article class="cp-mini">
+            <h4>租房族的综合产品最小清单：六件套就够用</h4>
+            <p>按使用频次排序，附可直接下载的 Excel 清单，预算控制在一千五以内。</p>
+            <div class="cp-meta" style="margin-top:8px"><span class="cp-tag">实用攻略</span><span>播放 12.3 万</span></div>
+          </article>
+          <article class="cp-mini">
+            <h4>创作者访谈：拍了三年测评，我如何避免被参数带跑</h4>
+            <p>与签约创作者周叙的一次长谈，谈选题取舍、谈社区压力、也谈翻车经历。</p>
+            <div class="cp-meta" style="margin-top:8px"><span class="cp-tag">人物访谈</span><span>播放 7.8 万</span></div>
+          </article>
+          <article class="cp-mini">
+            <h4>免费产品综免费综合的五个常见误读</h4>
+            <p>把社区里争论最多的五个问题逐条拆解，给出可验证的判断路径。</p>
+            <div class="cp-meta" style="margin-top:8px"><span class="cp-tag">知识科普</span><span>播放 9.1 万</span></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 视频频道（三列卡片） -->
+  <section class="cp-section" id="cp-videos" aria-labelledby="cp-videos-h2">
+    <div class="cp-wrap">
+      <div class="cp-sec-head">
+        <div>
+          <span class="cp-eyebrow">Video channel</span>
+          <h2 id="cp-videos-h2">视频频道：综合产品的高清原创内容持续更新</h2>
+        </div>
+        <p class="cp-sec-desc">每支视频标注作者、标签与互动数据，点击卡片可查看完整简介；重点条目提供缩略图，其余以文字条目呈现。</p>
+      </div>
+
+      <div class="cp-video-grid">
+        <article class="cp-vcard">
+          <figure>
+            <svg viewBox="0 0 640 360" role="img" aria-label="厨房台面上的综合产品收纳实拍封面，暖色晨光与木质砧板">
+              <defs><linearGradient id="cpVidB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8d6b8"/><stop offset="1" stop-color="#c79b6a"/></linearGradient></defs>
+              <rect width="640" height="360" fill="url(#cpVidB)"/>
+              <rect x="0" y="262" width="640" height="98" fill="#a97a4c"/>
+              <rect x="70" y="170" width="110" height="92" rx="7" fill="#f6f1e6"/>
+              <rect x="200" y="140" width="130" height="122" rx="7" fill="#8aa892"/>
+              <circle cx="265" cy="200" r="26" fill="#f4e3b2"/>
+              <rect x="352" y="186" width="90" height="76" rx="7" fill="#e6a93c"/>
+              <rect x="464" y="154" width="104" height="108" rx="7" fill="#f6f1e6"/>
+              <path d="M96 148 q34 -46 78 -8" stroke="#3d554c" stroke-width="4" fill="none"/>
+            </svg>
+            <span class="cp-vnum">01</span>
+          </figure>
+          <div class="cp-vbody">
+            <h3>厨房台面大扫除：六类综合产品的收纳顺序</h3>
+            <p>从动线出发重排台面，先量后买，附赠可打印的尺寸标记卡。片尾给出三种户型的替换方案。</p>
+            <div class="cp-meta"><span class="cp-tag">家居收纳</span><span>作者：宋知微</span></div>
+            <div class="cp-vfoot">
+              <div class="cp-vstat"><span>播放 8.4 万</span><span>点赞 3,120</span><span>收藏 1,860</span></div>
+              <div class="cp-vact">
+                <button class="cp-icon-btn" type="button" data-cp-like>♡</button>
+                <button class="cp-icon-btn" type="button" data-cp-save>☆</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="cp-vcard">
+          <figure>
+            <svg viewBox="0 0 640 360" role="img" aria-label="数码综合产品桌面场景封面，深色背景与蓝色屏幕光">
+              <defs><linearGradient id="cpVidC" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c2a3a"/><stop offset="1" stop-color="#2f5d7c"/></linearGradient></defs>
+              <rect width="640" height="360" fill="url(#cpVidC)"/>
+              <rect x="80" y="120" width="240" height="150" rx="10" fill="#0f1b26"/>
+              <rect x="96" y="136" width="208" height="118" rx="6" fill="#3f7ea1" opacity=".85"/>
+              <rect x="356" y="170" width="180" height="22" rx="8" fill="#c9d8cf" opacity=".8"/>
+              <rect x="356" y="206" width="130" height="14" rx="7" fill="#c9d8cf" opacity=".5"/>
+              <rect x="356" y="234" width="160" height="14" rx="7" fill="#c9d8cf" opacity=".35"/>
+              <circle cx="540" cy="110" r="42" fill="#e6a93c" opacity=".8"/>
+              <rect x="80" y="288" width="456" height="10" rx="5" fill="#c9d8cf" opacity=".35"/>
+            </svg>
+            <span class="cp-vnum">02</span>
+          </figure>
+          <div class="cp-vbody">
+            <h3>桌面数码综合产品怎么配：五千预算的三套组合</h3>
+            <p>按办公、剪辑与游戏三种用途拆分配置，逐项说明为什么这台更适合而不是那台。</p>
+            <div class="cp-meta"><span class="cp-tag">选购攻略</span><span>作者：韩野</span></div>
+            <div class="cp-vfoot">
+              <div class="cp-vstat"><span>播放 11.2 万</span><span>点赞 5,408</span><span>收藏 3,275</span></div>
+              <div class="cp-vact">
+                <button class="cp-icon-btn" type="button" data-cp-like>♡</button>
+                <button class="cp-icon-btn" type="button" data-cp-save>☆</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="cp-vcard">
+          <figure>
+            <svg viewBox="0 0 640 360" role="img" aria-label="户外露营综合产品打包封面，绿色草地与帐篷剪影">
+              <defs><linearGradient id="cpVidD" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe3d6"/><stop offset="1" stop-color="#6f9c80"/></linearGradient></defs>
+              <rect width="640" height="360" fill="url(#cpVidD)"/>
+              <path d="M0 280 Q160 218 320 262 Q470 302 640 250 L640 360 L0 360 Z" fill="#3f6b52"/>
+              <path d="M210 262 L286 148 L362 262 Z" fill="#f4e3b2"/>
+              <path d="M286 262 L286 190 L330 262 Z" fill="#d8c08f"/>
+              <rect x="430" y="220" width="70" height="46" rx="6" fill="#b9643f"/>
+              <circle cx="126" cy="120" r="34" fill="#f6d98f" opacity=".85"/>
+              <g fill="#2d5340" opacity=".8"><rect x="60" y="240" width="12" height="30" rx="4"/><rect x="82" y="234" width="12" height="36" rx="4"/></g>
+            </svg>
+            <span class="cp-vnum">03</span>
+          </figure>
+          <div class="cp-vbody">
+            <h3>两天一夜露营：综合产品装备的真实负重测试</h3>
+            <p>把清单上的十九件装备全部背上山，实测谁是真正必需项，谁可以留在家。</p>
+            <div class="cp-meta"><span class="cp-tag">户外活动</span><span>作者：林照</span></div>
+            <div class="cp-vfoot">
+              <div class="cp-vstat"><span>播放 6.7 万</span><span>点赞 2,744</span><span>收藏 1,530</span></div>
+              <div class="cp-vact">
+                <button class="cp-icon-btn" type="button" data-cp-like>♡</button>
+                <button class="cp-icon-btn" type="button" data-cp-save>☆</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="cp-vcard">
+          <figure>
+            <svg viewBox="0 0 640 360" role="img" aria-label="综合产品维护保养特写封面，金属零件与螺丝刀排列">
+              <defs><linearGradient id="cpVidE" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a3c34"/><stop offset="1" stop-color="#7d6555"/></linearGradient></defs>
+              <rect width="640" height="360" fill="url(#cpVidE)"/>
+              <circle cx="180" cy="180" r="72" fill="none" stroke="#d8c8b4" stroke-width="16"/>
+              <circle cx="180" cy="180" r="24" fill="#d8c8b4"/>
+              <rect x="300" y="122" width="16" height="150" rx="8" fill="#c9d8cf"/>
+              <rect x="336" y="150" width="14" height="110" rx="7" fill="#e6a93c"/>
+              <rect x="372" y="134" width="14" height="130" rx="7" fill="#c9d8cf"/>
+              <rect x="452" y="120" width="120" height="120" rx="12" fill="#d8c8b4" opacity=".55"/>
+              <text x="72" y="320" font-size="20" fill="#e8dccb" font-family="sans-serif">第 5 天出现的异响 · 实拍回放</text>
+            </svg>
+            <span class="cp-vnum">04</span>
+          </figure>
+          <div class="cp-vbody">
+            <h3>用满一年之后：三款综合产品的维护成本复盘</h3>
+            <p>记录更换配件、清洁耗材与送修时间的真实支出，把“便宜”重新算一遍。</p>
+            <div class="cp-meta"><span class="cp-tag">长期使用</span><span>作者：陆启年</span></div>
+            <div class="cp-vfoot">
+              <div class="cp-vstat"><span>播放 5.9 万</span><span>点赞 2,318</span><span>收藏 1,404</span></div>
+              <div class="cp-vact">
+                <button class="cp-icon-btn" type="button" data-cp-like>♡</button>
+                <button class="cp-icon-btn" type="button" data-cp-save>☆</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="cp-vcard">
+          <figure>
+            <svg viewBox="0 0 640 360" role="img" aria-label="母婴综合产品使用场景封面，柔和粉色与摇篮轮廓">
+              <defs><linearGradient id="cpVidF" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2e6ee"/><stop offset="1" stop-color="#c9a7bd"/></linearGradient></defs>
+              <rect width="640" height="360" fill="url(#cpVidF)"/>
+              <path d="M170 230 q150 -110 300 0 z" fill="#f6f1e6"/>
+              <rect x="170" y="230" width="300" height="12" rx="6" fill="#b98aa4"/>
+              <circle cx="320" cy="150" r="34" fill="#e8c9a0"/>
+              <rect x="500" y="120" width="60" height="120" rx="10" fill="#f6f1e6" opacity=".8"/>
+              <circle cx="120" cy="110" r="26" fill="#f4e3b2" opacity=".8"/>
+            </svg>
+            <span class="cp-vnum">05</span>
+          </figure>
+          <div class="cp-vbody">
+            <h3>新手家庭的综合产品清单：哪些可以晚点买</h3>
+            <p>按宝宝月龄梳理优先级，避免一次性囤货，附一份可勾选的延迟购买表。</p>
+            <div class="cp-meta"><span class="cp-tag">亲子成长</span><span>作者：周叙</span></div>
+            <div class="cp-vfoot">
+              <div class="cp-vstat"><span>播放 7.5 万</span><span>点赞 3,602</span><span>收藏 2,190</span></div>
+              <div class="cp-vact">
+                <button class="cp-icon-btn" type="button" data-cp-like>♡</button>
+                <button class="cp-icon-btn" type="button" data-cp-save>☆</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="cp-vcard">
+          <figure>
+            <svg viewBox="0 0 640 360" role="img" aria-label="综合产品工厂参访封面，流水线与质检灯箱">
+              <defs><linearGradient id="cpVidG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b3a4a"/><stop offset="1" stop-color="#4c6b7d"/></linearGradient></defs>
+              <rect width="640" height="360" fill="url(#cpVidG)"/>
+              <rect x="60" y="120" width="520" height="26" rx="10" fill="#c9d8cf" opacity=".5"/>
+              <g fill="#e6a93c">
+                <rect x="96" y="96" width="42" height="24" rx="5"/><rect x="176" y="96" width="42" height="24" rx="5"/>
+                <rect x="256" y="96" width="42" height="24" rx="5"/><rect x="336" y="96" width="42" height="24" rx="5"/>
+              </g>
+              <rect x="60" y="210" width="240" height="96" rx="8" fill="#132433" opacity=".8"/>
+              <circle cx="180" cy="258" r="26" fill="#f4e3b2" opacity=".9"/>
+              <rect x="340" y="210" width="240" height="96" rx="8" fill="#132433" opacity=".55"/>
+              <path d="M380 286 l40 -46 l40 46 z" fill="#7d9aa8"/>
+            </svg>
+            <span class="cp-vnum">06</span>
+          </figure>
+          <div class="cp-vbody">
+            <h3>走进生产一线：综合产品质检环节的六个节点</h3>
+            <p>从原料入库到成品抽检，用镜头记录一次真实的工厂参访，回应社区里的质疑。</p>
+            <div class="cp-meta"><span class="cp-tag">行业观察</span><span>作者：林照</span></div>
+            <div class="cp-vfoot">
+              <div class="cp-vstat"><span>播放 4.8 万</span><span>点赞 1,946</span><span>收藏 1,022</span></div>
+              <div class="cp-vact">
+                <button class="cp-icon-btn" type="button" data-cp-like>♡</button>
+                <button class="cp-icon-btn" type="button" data-cp-save>☆</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 专题企划 -->
+  <section class="cp-section cp-alt" id="cp-topics" aria-labelledby="cp-topics-h2">
+    <div class="cp-wrap">
+      <div class="cp-sec-head">
+        <div>
+          <span class="cp-eyebrow">Series</span>
+          <h2 id="cp-topics-h2">专题企划：围绕综合产品的三个长期更新项目</h2>
+        </div>
+        <p class="cp-sec-desc">专题由编辑与创作者共同维护，标注更新状态，每个专题保持稳定的内容条目节奏。</p>
+      </div>
+
+      <div class="cp-topic-grid">
+        <article class="cp-topic cp-topic-wide">
+          <figure>
+            <svg viewBox="0 0 720 460" role="img" aria-label="年度评测专题主视觉：数据曲线与产品剪影组合">
+              <defs><linearGradient id="cpTopicA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1f6f5c"/><stop offset="1" stop-color="#5aa58c"/></linearGradient></defs>
+              <rect width="720" height="460" fill="url(#cpTopicA)"/>
+              <g stroke="#eaf5ef" stroke-width="1.4" opacity=".35" fill="none">
+                <path d="M60 360 L180 300 L300 330 L420 220 L540 260 L660 150"/>
+              </g>
+              <g fill="#f4e3b2" opacity=".95">
+                <circle cx="180" cy="300" r="7"/><circle cx="300" cy="330" r="7"/><circle cx="420" cy="220" r="7"/><circle cx="540" cy="260" r="7"/><circle cx="660" cy="150" r="7"/>
+              </g>
+              <rect x="80" y="86" width="180" height="16" rx="8" fill="#f4e3b2" opacity=".9"/>
+              <rect x="80" y="116" width="120" height="10" rx="5" fill="#eaf5ef" opacity=".55"/>
+              <circle cx="600" cy="360" r="52" fill="#e6a93c" opacity=".5"/>
+            </svg>
+          </figure>
+          <div class="cp-topic-body">
+            <span class="cp-topic-status"><em></em>持续更新中 · 已上线 42 支</span>
+            <h3>年度综合产品评测实录</h3>
+            <p>用一整年时间跟踪同一批产品，记录季节变化、使用磨损与真实故障，把短期体验拉长为可对照的长期观察。专题每两周更新一支深度视频，并同步公开原始记录表。</p>
+            <ul class="cp-topic-list">
+              <li>第 12 期：梅雨季里三款产品的防潮表现对照</li>
+              <li>第 11 期：换季收纳时的清洁耗时实测记录</li>
+              <li>第 10 期：半年节点上的零件磨损显微拍摄</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="cp-topic">
+          <div class="cp-topic-body">
+            <span class="cp-topic-status"><em></em>开放报名 · 第 6 期</span>
+            <h3>创作者扶持计划</h3>
+            <p>面向所有愿意认真拍综合产品内容的新人，提供器材、场景与选题共研支持，不设粉丝门槛。</p>
+            <ul class="cp-topic-list">
+              <li>报名通道：官方投稿入口提交作品链接</li>
+              <li>扶持内容：公共器材间使用权 90 天</li>
+              <li>上线节奏：每月一期，评审公布于企业动态</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="cp-topic">
+          <div class="cp-topic-body">
+            <span class="cp-topic-status"><em></em>投票进行中 · 剩 9 天</span>
+            <h3>免费产品综免费综合使用攻略征集</h3>
+            <p>把你在日常里攒下的小技巧拍成三分钟短片，入选作品将进入官方攻略合集并获得流量扶持。</p>
+            <ul class="cp-topic-list">
+              <li>征集要求：原创拍摄，画面清晰，含完整步骤</li>
+              <li>评选维度：实用性、可复现性、表达清晰度</li>
+              <li>奖励设置：合集署名、专题推荐位与年度评选资格</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 创作者矩阵（单行名录） -->
+  <section class="cp-section" id="cp-authors" aria-labelledby="cp-authors-h2">
+    <div class="cp-wrap">
+      <div class="cp-sec-head">
+        <div>
+          <span class="cp-eyebrow">Creators</span>
+          <h2 id="cp-authors-h2">创作者矩阵：综合产品社区里的五位长期作者</h2>
+        </div>
+        <p class="cp-sec-desc">点击头像可查看作者档案，包含擅长领域、作品数与粉丝数，以及来自平台的官方简介。</p>
+      </div>
+
+      <div class="cp-author-row">
+        <article class="cp-author" tabindex="0" role="button" aria-label="查看创作者陆启年的档案" data-cp-author="陆启年|深度测评 / 长期观察|68|12.4 万|前工业设计师，现全职做综合产品测评。习惯把产品拆到零件级别再谈结论，主张“先看使用场景，再看参数表”。主持年度评测专题三年，最享受的事是收到用户说“按你的方法选对了”。">
+          <div class="cp-avatar" style="background:#1f6f5c">陆</div>
+          <h3>陆启年</h3>
+          <span class="cp-role">深度测评 / 长期观察</span>
+          <div class="cp-nums">作品 68 · 粉丝 12.4 万</div>
+        </article>
+        <article class="cp-author" tabindex="0" role="button" aria-label="查看创作者宋知微的档案" data-cp-author="宋知微|家居收纳 / 空间规划|52|9.8 万|室内设计出身，专注小户型与合租场景的综合产品收纳方案。视频里几乎不出现夸张特效，全靠一镜到底的整理过程说话。相信“好收纳让人少做无意义的选择”，并把这个观点写进了自己的每一期脚本。">
+          <div class="cp-avatar" style="background:#b9643f">宋</div>
+          <h3>宋知微</h3>
+          <span class="cp-role">家居收纳 / 空间规划</span>
+          <div class="cp-nums">作品 52 · 粉丝 9.8 万</div>
+        </article>
+        <article class="cp-author" tabindex="0" role="button" aria-label="查看创作者韩野的档案" data-cp-author="韩野|数码配置 / 效率工具|74|15.2 万|从程序员转行做内容，擅长把复杂的配置逻辑讲成普通人能听懂的话。每期视频都会现场跑一次真实任务，而不是只展示跑分截图。对综合产品的态度很直接：能稳定解决问题，才配叫好产品。">
+          <div class="cp-avatar" style="background:#2f5d7c">韩</div>
+          <h3>韩野</h3>
+          <span class="cp-role">数码配置 / 效率工具</span>
+          <div class="cp-nums">作品 74 · 粉丝 15.2 万</div>
+        </article>
+        <article class="cp-author" tabindex="0" role="button" aria-label="查看创作者林照的档案" data-cp-author="林照|户外活动 / 工厂探访|41|6.9 万|常年在路上，拍过雪山营地也拍过生产车间。善于用长镜头保留现场感，让观众自己判断一件综合产品在真实环境里的分量。他说自己不是在推荐装备，而是在记录“人怎么和工具相处”。">
+          <div class="cp-avatar" style="background:#4a7a56">林</div>
+          <h3>林照</h3>
+          <span class="cp-role">户外活动 / 工厂探访</span>
+          <div class="cp-nums">作品 41 · 粉丝 6.9 万</div>
+        </article>
+        <article class="cp-author" tabindex="0" role="button" aria-label="查看创作者周叙的档案" data-cp-author="周叙|亲子成长 / 生活记录|37|8.3 万|两个孩子的父亲，把家庭日常本身当作选题来源。镜头柔和，语气克制，从不制造焦虑。他坚持所有推荐都基于自家真实使用，并会主动说明哪些条件不具备普适性，因此被许多新手家庭长期关注。">
+          <div class="cp-avatar" style="background:#8a5f86">周</div>
+          <h3>周叙</h3>
+          <span class="cp-role">亲子成长 / 生活记录</span>
+          <div class="cp-nums">作品 37 · 粉丝 8.3 万</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 用户评价（双列） -->
+  <section class="cp-section cp-alt" id="cp-reviews" aria-labelledby="cp-reviews-h2">
+    <div class="cp-wrap">
+      <div class="cp-sec-head">
+        <div>
+          <span class="cp-eyebrow">Reviews</span>
+          <h2 id="cp-reviews-h2">用户口碑：综合产品社区里的八条真实反馈</h2>
+        </div>
+        <p class="cp-sec-desc">来自注册用户与创作者的公开评价，维度各不相同，正面与保留意见一并呈现。</p>
+      </div>
+
+      <div class="cp-review-grid">
+        <article class="cp-review">
+          <div class="cp-review-top">
+            <span class="cp-review-dot" style="background:#1f6f5c">陈</span>
+            <span class="cp-review-name">陈默</span>
+            <span class="cp-review-star">★★★★★</span>
+          </div>
+          <p>按第 12 期的方法把家里厨房重排了一次，清洁时间从每天二十分钟降到八分钟。最有用的是那张尺寸标记卡，直接打印就能用。</p>
+        </article>
+        <article class="cp-review">
+          <div class="cp-review-top">
+            <span class="cp-review-dot" style="background:#b9643f">许</span>
+            <span class="cp-review-name">许一诺</span>
+            <span class="cp-review-star">★★★★☆</span>
+          </div>
+          <p>内容质量确实高，唯一想提的是部分长视频缺少分段章节，想回看某个结论要拖进度条。如果能加个时间轴索引会更好。</p>
+        </article>
+        <article class="cp-review">
+          <div class="cp-review-top">
+            <span class="cp-review-dot" style="background:#2f5d7c">李</span>
+            <span class="cp-review-name">李青禾</span>
+            <span class="cp-review-star">★★★★★</span>
+          </div>
+          <p>租房三年，跟着最小清单买了六件，预算控制在一千五以内，用到现在没有一件后悔。这才是我理解的综免费综合。</p>
+        </article>
+        <article class="cp-review">
+          <div class="cp-review-top">
+            <span class="cp-review-dot" style="background:#4a7a56">赵</span>
+            <span class="cp-review-name">赵行舟</span>
+            <span class="cp-review-star">★★★★★</span>
+          </div>
+          <p>作为同行说句实话，你们公开原始记录表的做法很有勇气。行业内很少见到愿意把“翻车”也放出来的平台。</p>
+        </article>
+        <article class="cp-review">
+          <div class="cp-review-top">
+            <span class="cp-review-dot" style="background:#8a5f86">吴</span>
+            <span class="cp-review-name">吴听澜</span>
+            <span class="cp-review-star">★★★★☆</span>
+          </div>
+          <p>亲子那一期讲得很克制，没有制造焦虑，这点很难得。希望以后多拍一些月龄更小的使用记录。</p>
+        </article>
+        <article class="cp-review">
+          <div class="cp-review-top">
+            <span class="cp-review-dot" style="background:#e6a93c">何</span>
+            <span class="cp-review-name">何嘉树</span>
+            <span class="cp-review-star">★★★★★</span>
+          </div>
+          <p>投稿过两次，第一次被退回时编辑给了很具体的修改意见，不是一句“质量不达标”打发了。这种认真劲儿让我愿意继续投。</p>
+        </article>
+        <article class="cp-review">
+          <div class="cp-review-top">
+            <span class="cp-review-dot" style="background:#134a3d">孙</span>
+            <span class="cp-review-name">孙遇安</span>
+            <span class="cp-review-star">★★★★☆</span>
+          </div>
+          <p>希望户外装备的部分能再多些极端天气下的记录，常规天气的测试看起来参考价值有限，期待更多细节。</p>
+        </article>
+        <article class="cp-review">
+          <div class="cp-review-top">
+            <span class="cp-review-dot" style="background:#b06a3c">郑</span>
+            <span class="cp-review-name">郑叙白</span>
+            <span class="cp-review-star">★★★★★</span>
+          </div>
+          <p>作为官方平台，能做到让不同意见同时留在评论区，本身就说明内容生态是健康的。会一直看下去。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 数据榜单 -->
+  <section class="cp-section" aria-labelledby="cp-rank-h2">
+    <div class="cp-wrap">
+      <div class="cp-sec-head">
+        <div>
+          <span class="cp-eyebrow">Charts</span>
+          <h2 id="cp-rank-h2">数据榜单：综合产品内容的热度、新人与口碑</h2>
+        </div>
+        <p class="cp-sec-desc">榜单每周一更新，统计口径为近三十天的有效播放、互动与评价综合计算。</p>
+      </div>
+
+      <div class="cp-rank-grid">
+        <div class="cp-rank">
+          <h3>内容热度榜 <em>本周</em></h3>
+          <ol>
+            <li>八款同价位综合产品 30 天横评</li>
+            <li>桌面数码综合产品怎么配</li>
+            <li>厨房台面大扫除收纳顺序</li>
+            <li>两天一夜露营装备负重测试</li>
+            <li>用满一年之后的维护成本复盘</li>
+          </ol>
+        </div>
+        <div class="cp-rank">
+          <h3>新人创作者榜 <em>月度</em></h3>
+          <ol>
+            <li>南汐的收纳小课</li>
+            <li>老岳说家电</li>
+            <li>半山厂房日记</li>
+            <li>小鹿的选购笔记</li>
+            <li>一平米工作室</li>
+          </ol>
+        </div>
+        <div class="cp-rank">
+          <h3>口碑推荐榜 <em>季度</em></h3>
+          <ol>
+            <li>亲子家庭综合产品清单</li>
+            <li>免费产品综免费综合五个误读</li>
+            <li>质检环节的六个节点</li>
+            <li>租房最小六件套</li>
+            <li>创作者访谈：避免被参数带跑</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 企业动态 + 合作品牌 -->
+  <section class="cp-section cp-alt" id="cp-news" aria-labelledby="cp-news-h2">
+    <div class="cp-wrap">
+      <div class="cp-sec-head">
+        <div>
+          <span class="cp-eyebrow">Updates &amp; Partners</span>
+          <h2 id="cp-news-h2">企业动态与合作伙伴：综合产品平台的近期进展</h2>
+        </div>
+        <p class="cp-sec-desc">官方发布的内容更新、活动报名与合作信息，均在官网同步公示，接受社区监督。</p>
+      </div>
+
+      <div class="cp-triple">
+        <div>
+          <ul class="cp-timeline">
+            <li>
+              <time datetime="2026-11-22">2026-11-22</time>
+              <h4>年度评测专题上线，收录 42 支高清原创视频</h4>
+              <p>专题页新增时间轴索引与原始记录表下载入口，所有素材保留拍摄日期与设备信息。</p>
+            </li>
+            <li>
+              <time datetime="2026-11-20">2026-11-20</time>
+              <h4>创作者扶持计划第 6 期报名开启</h4>
+              <p>本期名额 120 位，开放公共器材间与样板场景使用权，评审结果将于十二月上旬公布。</p>
+            </li>
+            <li>
+              <time datetime="2026-11-18">2026-11-18</time>
+              <h4>移动端播放器升级，支持 4K 高清下载</h4>
+              <p>离线收藏与观看进度实现跨端同步，弱网环境下的自动清晰度切换更平顺。</p>
+            </li>
+            <li>
+              <time datetime="2026-11-15">2026-11-15</time>
+              <h4>攻略征集投票结果公布</h4>
+              <p>共收到 216 支投稿，12 支作品进入复赛，投票入口将在官网首页保留至月底。</p>
+            </li>
+            <li>
+              <time datetime="2026-11-08">2026-11-08</time>
+              <h4>内容审核细则更新说明</h4>
+              <p>明确测评类内容的利益披露要求，所有含商业合作的内容须在开头三秒标注。</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="font-size:1rem;margin-bottom:14px;color:var(--cp-green-deep)">合作品牌与伙伴</h3>
+          <div class="cp-partner-grid">
+            <div class="cp-partner"><i style="background:#1f6f5c">器</i>器物研究所</div>
+            <div class="cp-partner"><i style="background:#b9643f">造</i>造物工坊</div>
+            <div class="cp-partner"><i style="background:#2f5d7c">数</i>数研实验室</div>
+            <div class="cp-partner"><i style="background:#e6a93c">野</i>野行装备</div>
+            <div class="cp-partner"><i style="background:#8a5f86">家</i>家和生活馆</div>
+            <div class="cp-partner"><i style="background:#4a7a56">山</i>半山影像</div>
+          </div>
+          <div class="cp-intro-card" style="margin-top:18px">
+            <h3>官方发布说明</h3>
+            <p style="font-size:.86rem">以上合作均为内容共创关系，不涉及对测评结论的干预。任何品牌方无权要求修改结论或删除负面记录，如有违反将终止合作并公示。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 FAQ + 投稿 CTA -->
+  <section class="cp-section" id="cp-faq" aria-labelledby="cp-faq-h2">
+    <div class="cp-wrap">
+      <div class="cp-sec-head">
+        <div>
+          <span class="cp-eyebrow">Help center</span>
+          <h2 id="cp-faq-h2">帮助中心：关于综合产品官网的六个常见问题</h2>
+        </div>
+        <p class="cp-sec-desc">仍然没有答案？可通过官方投稿入口留言，编辑团队会在两个工作日内回复。</p>
+      </div>
+
+      <div class="cp-faq">
+        <details open>
+          <summary>平台上的内容全部免费吗？</summary>
+          <p>公开视频与图文攻略均可免费观看与下载清单类附件。少量一对一咨询与定制清单属于付费服务，页面会明确标注，不影响免费内容的完整性与结论独立性。</p>
+        </details>
+        <details>
+          <summary>如何成为签约创作者？</summary>
+          <p>先通过官方投稿入口提交至少两支原创作品，编辑团队会依据选题完整度、画面清晰度与表达逻辑进行初评。通过初评后进入为期一个月的试合作期，双方确认节奏后再签署长期协议。</p>
+        </details>
+        <details>
+          <summary>测评结论会因商业合作而改变吗？</summary>
+          <p>不会。所有含合作的内容须在视频开头三秒披露利益关系，结论部分由编辑与创作者共同复核。若品牌方要求修改结论，平台将终止合作并在企业动态中公示。</p>
+        </details>
+        <details>
+          <summary>视频可以转载到其他平台吗？</summary>
+          <p>欢迎转载但须保留完整片头与官方署名，不得剪辑结论片段单独发布。商业用途需提前通过投稿入口发起授权申请，我们通常在三个工作日内答复。</p>
+        </details>
+        <details>
+          <summary>原始记录表在哪里下载？</summary>
+          <p>每期深度测评的视频简介区与专题页均提供下载入口，文件包含测试项目、日期、环境条件与异常记录。数据未经美化处理，可能存在空项，请结合视频理解。</p>
+        </details>
+        <details>
+          <summary>如何反馈内容错误或提交改进建议？</summary>
+          <p>在对应视频下方使用反馈按钮，或在投稿入口选择“问题反馈”类型提交。核实后我们会在视频简介中补充更正说明，并记录进季度复盘文档。</p>
+        </details>
+      </div>
+
+      <div class="cp-cta" style="margin-top:40px">
+        <div>
+          <h2>你的经验值得被拍下来</h2>
+          <p>无论是使用攻略、翻车记录还是长期跟踪，只要真实、具体、可复现，都欢迎投稿到综合产品官方网站。审核通过后进入官方内容生态，与四十余位创作者一同成长。</p>
+        </div>
+        <button class="cp-btn" type="button" data-cp-open="submit">立即投稿报名</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="cp-footer">
+  <div class="cp-wrap">
+    <div class="cp-footer-grid">
+      <div>
+        <div class="cp-footer-brand">
+          <span class="cp-brand-mark" aria-hidden="true">综</span>
+          <strong>综合产品</strong>
+        </div>
+        <p>综合产品官方网站，专注综合产品领域的原创高清视频内容平台。以真实记录与公开数据为方法，持续运营高品质内容生态，为用户提供值得信赖的选购参考。</p>
+        <p style="margin-top:10px">合作与投稿：editor@zonghe-video.example<br>商务合作：partner@zonghe-video.example</p>
+      </div>
+      <div>
+        <h4>内容频道</h4>
+        <ul>
+          <li><a href="#cp-focus">焦点推荐</a></li>
+          <li><a href="#cp-videos">视频频道</a></li>
+          <li><a href="#cp-topics">专题企划</a></li>
+          <li><a href="#cp-authors">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于我们</h4>
+        <ul>
+          <li><a href="#cp-about">品牌介绍</a></li>
+          <li><a href="#cp-news">企业动态</a></li>
+          <li><a href="#cp-reviews">用户口碑</a></li>
+          <li><a href="#cp-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区规则</h4>
+        <ul>
+          <li>原创内容版权说明</li>
+          <li>利益披露与审核细则</li>
+          <li>创作者行为规范</li>
+          <li>隐私与数据使用说明</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cp-footer-bottom">
+      <span>综合产品官方网站 · 版权所有 © 2018–2026 综合产品内容科技</span>
+      <span>持续运营中 · 备案号：京 ICP 备 2018000000 号-3</span>
+    </div>
+  </div>
+</footer>
+
+<button class="cp-top" id="cp-top" type="button" aria-label="回到顶部">↑</button>
+
+<div class="cp-modal" id="cp-modal" role="dialog" aria-modal="true" aria-labelledby="cp-modal-title">
+  <div class="cp-modal-box">
+    <button class="cp-modal-close" id="cp-modal-close" type="button" aria-label="关闭弹窗">×</button>
+    <h3 id="cp-modal-title">提示</h3>
+    <div id="cp-modal-body"></div>
+  </div>
+</div>
+
+<div class="cp-toast" id="cp-toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  "use strict";
+  var toastEl = document.getElementById("cp-toast");
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add("cp-is-show");
+    if(toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove("cp-is-show"); }, 2000);
+  }
+
+  /* 移动端导航 */
+  var burger = document.getElementById("cp-burger");
+  var mobileNav = document.getElementById("cp-mobile-nav");
+  if(burger && mobileNav){
+    burger.addEventListener("click", function(){
+      var open = mobileNav.classList.toggle("cp-is-open");
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    mobileNav.addEventListener("click", function(e){
+      if(e.target.tagName === "A"){
+        mobileNav.classList.remove("cp-is-open");
+        burger.setAttribute("aria-expanded","false");
+      }
+    });
+  }
+
+  /* 公告条轮播 */
+  var announceItems = document.querySelectorAll(".cp-announce-item");
+  if(announceItems.length > 1){
+    var ai = 0;
+    setInterval(function(){
+      announceItems[ai].classList.remove("cp-is-on");
+      ai = (ai + 1) % announceItems.length;
+      announceItems[ai].classList.add("cp-is-on");
+    }, 4200);
+  }
+
+  /* 搜索建议与反馈 */
+  var searchInput = document.getElementById("cp-search-input");
+  var searchBtn = document.getElementById("cp-search-btn");
+  var searchTip = document.getElementById("cp-search-tip");
+  var pool = [
+    "综合产品 30 天横评",
+    "免费产品综免费综合 攻略",
+    "厨房台面收纳顺序",
+    "租房最小六件套",
+    "桌面数码配置组合",
+    "露营装备负重测试",
+    "创作者扶持计划报名",
+    "维护成本复盘",
+    "亲子家庭清单",
+    "质检环节参访"
+  ];
+  function renderTip(kw){
+    var val = (kw || "").trim();
+    if(!val){ searchTip.classList.remove("cp-is-open"); searchTip.innerHTML = ""; return; }
+    var hits = pool.filter(function(p){ return p.indexOf(val) > -1; }).slice(0,5);
+    if(!hits.length){
+      searchTip.innerHTML = '<span data-empty="1">未找到「' + val + '」相关内容，试试输入“横评”</span>';
+    }else{
+      searchTip.innerHTML = hits.map(function(h){
+        return '<span data-kw="' + h + '">' + h + '</span>';
+      }).join("");
+    }
+    searchTip.classList.add("cp-is-open");
+  }
+  if(searchInput){
+    searchInput.addEventListener("input", function(){ renderTip(this.value); });
+    searchInput.addEventListener("keydown", function(e){
+      if(e.key === "Enter"){ e.preventDefault(); searchBtn.click(); }
+    });
+  }
+  if(searchBtn){
+    searchBtn.addEventListener("click", function(){
+      var v = (searchInput.value || "").trim();
+      if(!v){ toast("请输入关键词后再搜索"); searchInput.focus(); return; }
+      toast("正在站内搜索「" + v + "」，结果按内容相关度排序");
+      renderTip(v);
+    });
+  }
+  if(searchTip){
+    searchTip.addEventListener("click", function(e){
+      var t = e.target;
+      if(t.dataset && t.dataset.kw){
+        searchInput.value = t.dataset.kw;
+        toast("已填入搜索词「" + t.dataset.kw + "」");
+        searchTip.classList.remove("cp-is-open");
+      }else if(t.dataset && t.dataset.empty){
+        searchTip.classList.remove("cp-is-open");
+      }
+    });
+    document.addEventListener("click", function(e){
+      if(!searchTip.contains(e.target) && e.target !== searchInput){ searchTip.classList.remove("cp-is-open"); }
+    });
+  }
+
+  /* 点赞 / 收藏 */
+  document.addEventListener("click", function(e){
+    var like = e.target.closest("[data-cp-like]");
+    if(like){
+      var liked = like.classList.toggle("cp-is-liked");
+      like.textContent = (liked ? "♥ 已赞" : "♡ 点赞");
+      toast(liked ? "感谢支持，已记录你的点赞" : "已取消点赞");
+      return;
+    }
+    var save = e.target.closest("[data-cp-save]");
+    if(save){
+      var saved = save.classList.toggle("cp-is-saved");
+      save.textContent = (saved ? "★ 已收藏" : "☆ 收藏");
+      toast(saved ? "已加入收藏，可在个人中心查看" : "已移出收藏");
+      return;
+    }
+    var share = e.target.closest("[data-cp-share]");
+    if(share){
+      var link = "https://share.zonghe-video.example/v/cp-2211";
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(link).then(function(){
+          toast("链接已复制，可分享到微信或微博");
+        }).catch(function(){ toast("复制失败，请手动选择地址栏分享"); });
+      }else{
+        toast("可点击浏览器地址栏复制链接分享");
+      }
+      return;
+    }
+  });
+
+  /* 弹窗 */
+  var modal = document.getElementById("cp-modal");
+  var modalTitle = document.getElementById("cp-modal-title");
+  var modalBody = document.getElementById("cp-modal-body");
+  var modalClose = document.getElementById("cp-modal-close");
+  function openModal(title, html){
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    modal.classList.add("cp-is-open");
+    document.body.style.overflow = "hidden";
+  }
+  function closeModal(){
+    modal.classList.remove("cp-is-open");
+    document.body.style.overflow = "";
+  }
+  if(modalClose){ modalClose.addEventListener("click", closeModal); }
+  if(modal){ modal.addEventListener("click", function(e){ if(e.target === modal) closeModal(); }); }
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeModal(); });
+
+  document.addEventListener("click", function(e){
+    var opener = e.target.closest("[data-cp-open]");
+    if(!opener) return;
+    var type = opener.getAttribute("data-cp-open");
+    if(type === "comment"){
+      openModal("评论区预览", '<p>当前视频共收到 318 条评论，以下为编辑精选的三条：</p><p style="font-size:.86rem;color:#3d554c">“第二阶段的故障记录拍得很实在，比只讲优点有用。”<br>“能不能补一期配件更换的采购渠道？”<br>“看完直接退了购物车里那台，谢谢帮我省钱。”</p><p style="font-size:.82rem;color:#6b837a">登录后可参与完整讨论，评论需遵守社区规则。</p>');
+    }else if(type === "submit"){
+      openModal("投稿报名", '<p style="font-size:.86rem">请填写基本信息，编辑团队会在两个工作日内联系你。所有投稿须为原创内容。</p><div class="cp-modal-field"><label for="cp-f-name">称呼</label><input id="cp-f-name" type="text" placeholder="例如：林照"></div><div class="cp-modal-field"><label for="cp-f-topic">选题方向</label><input id="cp-f-topic" type="text" placeholder="例如：小户型综合产品收纳"></div><div class="cp-modal-field"><label for="cp-f-note">作品说明</label><textarea id="cp-f-note" rows="3" placeholder="简要描述拍摄计划与内容亮点"></textarea></div><button class="cp-btn" type="button" id="cp-f-submit">提交报名</button>');
+      setTimeout(function(){
+        var btn = document.getElementById("cp-f-submit");
+        if(btn){
+          btn.addEventListener("click", function(){
+            var n = document.getElementById("cp-f-name");
+            if(!n.value.trim()){ toast("请先填写称呼"); n.focus(); return; }
+            closeModal();
+            toast("投稿信息已提交，请留意后续通知");
+          });
+        }
+      }, 30);
+    }
+  });
+
+  /* 作者档案弹窗 */
+  document.addEventListener("click", function(e){
+    var card = e.target.closest("[data-cp-author]");
+    if(!card) return;
+    var parts = card.getAttribute("data-cp-author").split("|");
+    openModal(parts[0] + " · 创作者档案",
+      '<p style="font-size:.84rem;color:#1f6f5c;font-weight:600">擅长领域：' + parts[1] + '</p>' +
+      '<p>作品数：' + parts[2] + ' 支　粉丝数：' + parts[3] + '</p>' +
+      '<p style="font-size:.88rem">' + parts[4] + '</p>' +
+      '<p style="font-size:.8rem;color:#6b837a">该创作者为综合产品官方网站长期合作作者，内容均经平台审核。</p>');
+  });
+  document.addEventListener("keydown", function(e){
+    if((e.key === "Enter" || e.key === " ") && e.target.hasAttribute && e.target.hasAttribute("data-cp-author")){
+      e.preventDefault();
+      e.target.click();
+    }
+  });
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById("cp-top");
+  window.addEventListener("scroll", function(){
+    if(window.scrollY > 520){ topBtn.classList.add("cp-is-show"); }
+    else{ topBtn.classList.remove("cp-is-show"); }
+  }, {passive:true});
+  topBtn.addEventListener("click", function(){ window.scrollTo({top:0,behavior:"smooth"}); });
+
+  /* 导航高亮 */
+  var navLinks = document.querySelectorAll(".cp-nav a");
+  var sections = [];
+  navLinks.forEach(function(a){
+    var id = a.getAttribute("href");
+    if(id && id.charAt(0) === "#"){
+      var sec = document.querySelector(id);
+      if(sec) sections.push({link:a, sec:sec});
+    }
+  });
+  window.addEventListener("scroll", function(){
+    var pos = window.scrollY + 160;
+    var current = null;
+    sections.forEach(function(s){
+      if(s.sec.offsetTop <= pos) current = s;
+    });
+    if(current){
+      navLinks.forEach(function(a){ a.classList.remove("cp-is-active"); });
+      current.link.classList.add("cp-is-active");
+    }
+  }, {passive:true});
+})();
+</script>
+</body>
+                                                                         </html>
